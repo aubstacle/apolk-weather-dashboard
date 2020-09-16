@@ -27,15 +27,33 @@
     <p id="currentTime" class="lead"></p>
 
     <main class="container col-lg-12">
-        <div class="row">
-          <div class="col-sm-3">
-              <h2>Search for a city:</h2>
-            <form class="search-bar" id="searchElement">
-              <input type="text" placeholder="Search.." />
-              <button class="search-btn">Search</button>
-              <button class="search-btn">Clear</button>
-            </form>
+      <!-- search bar and list of previous searches -->
+      <div class="row">
+        <div class="col-lg-3 card">
+          <h2>Search for a city:</h2>
+          <form class="search-bar" id="searchElement">
+            <input type="text" id="cityInput" placeholder="Search.." />
+            <button id="searchButton">Search</button>
+            <button id="clearButton">Clear</button>
+          </form>
+          <!-- saved searches will go here -->
+          <div class="card-body" id="searchHistory"></div>
+        </div>
+        <!-- current city forecast -->
+        <div class="col-lg-9" id="currentForecast">
+          <div class="row">
+            <h3>Current Forecast:</h3>
+            <!-- weather info will populate here -->
+            <div class="col-sm-3"></div>
           </div>
+          <!-- five day forecast -->
+          <div class="row">
+            <h3>Your 5 day Forecast:</h3>
+            <!-- 5 day forecast info will populate here -->
+            <div class="col-sm-12" id="fiveForecast">
+            </div>
+          </div>
+        </div>
       </div>
     </main>
 

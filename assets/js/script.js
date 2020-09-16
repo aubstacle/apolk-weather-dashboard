@@ -11,3 +11,9 @@ setInterval(function () {
   var clock = moment().format("h:mm:ss A");
   timeEl.text(clock);
 }, 1000);
+
+var cityInput = $("#cityInput");
+var searchBtn = $("#searchButton");
+var clearBtn = $("#clearButton");
+var searchHistory = $("#searchHistory");
+var fiveForecast = $("#fiveForecast");
