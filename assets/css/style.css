@@ -1,0 +1,11 @@
+.navbar-text {
+    font-size: 1.8em;
+}
+
+.lead {
+    text-align: center;
+    background-color: transparent;
+    color: black;
+    border-radius: 0;
+    margin-bottom: auto;
+}
