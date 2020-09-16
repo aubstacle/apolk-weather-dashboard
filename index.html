@@ -40,24 +40,30 @@
           <div class="card-body" id="searchHistory"></div>
         </div>
         <!-- current city forecast -->
-        <div class="col-lg-9" id="currentForecast">
-          <div class="row">
-            <h3>Current Forecast:</h3>
+        <div class="col-lg-9" id="currentContainer">
+          <div class="row card" id="currentForecast">
             <!-- weather info will populate here -->
-            <div class="col-sm-3"></div>
-          </div>
-          <!-- five day forecast -->
-          <div class="row">
-            <h3>Your 5 day Forecast:</h3>
-            <!-- 5 day forecast info will populate here -->
-            <div class="col-sm-12" id="fiveForecast">
+            <div class="col-sm-3">
+                <h2 class="cityName"></h2>
+                <div class="temperature"></div>
+                <div class="humidity"></div>
+                <div class="wind"></div>
+                <div class="uv"></div>
             </div>
+        </div>
           </div>
         </div>
-      </div>
+        <!-- five day forecast -->
+        <div class="row card">
+        <!-- 5 day forecast info will populate here -->
+        <div class="col-sm-9 float-right card" id="fiveForecast"></div>
     </main>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="./assets/js/script.js"></script>
   </body>
